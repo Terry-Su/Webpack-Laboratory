@@ -10,10 +10,10 @@ module.exports = {
   entry: {
     app:[ "webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000", PATH.resolve(__dirname, 'src/index.js') ]
   },
-  devServer: {
-    contentBase: './build',
-    hot: true
-  },
+  // devServer: {
+  //   contentBase: './build',
+  //   hot: true
+  // },
   devtool: 'inline-source-map',
   plugins: [
     new CleanWebpackPlugin( [ 'build' ] ),
